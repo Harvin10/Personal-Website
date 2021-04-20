@@ -12,7 +12,12 @@ function Button(props) {
 
     return (
         <Router>
-            <Link to={ props.redirect } className={ style.join(' ') } onClick={() => isClick ? setClick(false) : setClick(true) }>
+            <Link to={ props.redirect } className={ style.join(' ') } onClick={() => {
+                setClick(true);
+                setTimeout(() => {
+                    setClick(false);
+                }, 200) ;
+            }}>
                 { props.name }
             </Link>
 

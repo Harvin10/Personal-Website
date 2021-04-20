@@ -1,10 +1,10 @@
-import Button from './components/Button/Button.js';
+import Input from './components/Input/Input.js';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Button redirect="/home" name="Done" />
+      <Input type="text" />
     </div>
   );
 }
