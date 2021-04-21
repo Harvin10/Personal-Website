@@ -23,15 +23,9 @@ function Button(props) {
 
             <Switch>
                 <Route path={ props.redirect }>
-                    <Test />
                 </Route>
             </Switch>
         </Router>
     )
 }
-
-function Test() {
-    return <h1>test</h1>;
-}
-
 export default Button;
