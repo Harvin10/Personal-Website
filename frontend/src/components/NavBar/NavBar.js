@@ -6,10 +6,12 @@ import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 function NavBar(props) {
     return (
         <Router>
-            {props.route.map(route => {
-                    return <Hyperlink route={route} />
-                })
-            }
+            <div className="nav_bar">
+                {props.route.map(route => {
+                        return <Hyperlink route={route} />
+                    })
+                }
+            </div>
         </Router>
     );
 }
