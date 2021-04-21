@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Logo from '../Logo/Logo.js';
 import NavBar from '../NavBar/NavBar.js';
-import Styles from './Header.module.css';
+import styles from './Header.module.css';
 
 const links = [
     {
@@ -21,9 +21,9 @@ const links = [
 class Header extends Component {
     render() {
         return (
-            <div className="header">
+            <div className={ styles.header }>
                 <Logo />
-                <NavBar route={links} />
+                <NavBar route={ links } />
             </div>
         );
     }

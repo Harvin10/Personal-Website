@@ -1,15 +1,12 @@
 .App {
   /* display */ 
-  display: grid;
-  grid-template-columns: 3fr 1fr;
+  display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
   /* width/height */ 
   width: 100vw;
   height: 100vh;
   /* padding/margin */ 
-  margin: 50px;
   /* border */ 
   
   /* text */ 
