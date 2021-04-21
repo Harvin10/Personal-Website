@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Logo from '../Logo/Logo.js';
 import NavBar from '../NavBar/NavBar.js';
+import NavBar from '../PopUpMenu/PopUpMenu.js';
 import styles from './Header.module.css';
 
 const links = [
@@ -19,11 +20,18 @@ const links = [
 ]
 
 class Header extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            mobile:false
+        }
+    }
     render() {
         return (
             <div className={ styles.header }>
                 <Logo />
-                <NavBar route={ links } />
+                {this.mobile ? <PopUpMenu /> : <NavBar route={ links } />}
+                
             </div>
         );
     }
