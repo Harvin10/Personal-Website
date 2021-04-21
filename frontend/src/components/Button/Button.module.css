@@ -1,6 +1,6 @@
 .button {
     /* display */ 
-    background-color: white;
+    background-color: #F7F8F3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +32,7 @@
 
 .button:hover {
     /* display */ 
-    background-color: whitesmoke;
+    background-color: #F7F8F3;
     /* width/height */ 
     
     /* padding/margin */ 
