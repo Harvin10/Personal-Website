@@ -5,9 +5,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 function NavBar(props) {
     return (
         <Router>
-            {props.links.forEach((link) => {
-                (<Link to={link}>{link}</Link>)
-            })}
+                <Link to={props.link}>{props.name}</Link>
         </Router>
     );
 }
