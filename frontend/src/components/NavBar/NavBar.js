@@ -2,7 +2,7 @@ import React from 'react';
 import Styles from './NavBar.module.css';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
-function Logo(props) {
+function NavBar(props) {
     return (
         <Router>
             {props.links.forEach((link) => {
@@ -12,4 +12,4 @@ function Logo(props) {
     );
 }
 
-export default Logo;
+export default NavBar;
