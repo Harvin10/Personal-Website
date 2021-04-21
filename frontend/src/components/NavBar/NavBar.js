@@ -1,4 +1,5 @@
 import React from 'react';
+import Hyperlink from '../Hyperlink/Hyperlink.js';
 import Styles from './NavBar.module.css';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
