@@ -4,7 +4,7 @@ import styles from './PopUpMenu.module.css';
 
 function PopUpMenu(props) {
     return (
-        <div className={styles.nav_bar}>
+        <div className={styles.pop_up_menu}>
             <NavBar route={ props.route} />
         </div>
     );

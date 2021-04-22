@@ -2,7 +2,7 @@
   /* display */ 
 
   /* width/height */ 
-  width: 100vw;
+  width: 95vw;
   height: 100vh;
   /* padding/margin */ 
   margin-top: 10vh;
@@ -19,30 +19,37 @@
 }
 
 .menu {
-  /*display*//*width/height*/
-  
+  /*display*/
+  background-color: #F7444E;
+  /*width/height*/
+  width: 50%;
+  height: 100vh;
   /*padding/margin*/
+
+  /*border*/
+
+  /*text*/
+
+  /*shadow*
   
-  /*border*//*text*//*shadow*//*transition/animation*/
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
+  //*transition/animation*/
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
   /*others*/
-  left: 0;
 }
 
 .hidden {
   /*display*//*width/height*//*padding/margin*//*border*//*text*//*shadow*/
-  
   /*transition/animation*/
-  transform: translateX(-500px);
-  -webkit-transform: translateX(-500px);
-  -moz-transform: translateX(-500px);
-  -ms-transform: translateX(-500px);
-  -o-transform: translateX(-500px);
-  /*others*/
+  transform: translateX(-1000px);
+  -webkit-transform: translateX(-1000px);
+  -moz-transform: translateX(-1000px);
+  -ms-transform: translateX(-1000px);
+  -o-transform: translateX(-1000px);
+    /*others*/
 }
 
 
