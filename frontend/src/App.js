@@ -62,7 +62,6 @@ class App extends Component {
 
   viewMenu = (e) => {
     if(e) {
-      console.log(e);
       this.setState({isClick:true})
     } else {
       this.setState({isClick:false}) 
@@ -72,9 +71,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header route={ links } viewMenu={ this.viewMenu } isClick={ this.state.isClick } isMobile={ this.state.isMobile}/>
+        <Header route={ links } viewMenu={ this.viewMenu } isClick={ this.state.isClick } isMobile={ this.state.isMobile }/>
         <div className={ `menu ${this.state.isClick ? '' : 'hidden'}` } >
-            <PopUpMenu route={ links } />
+            <PopUpMenu route={ links } viewMenu={ this.viewMenu } />
         </div>
       </div>
     );

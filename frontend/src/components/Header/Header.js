@@ -10,7 +10,7 @@ class Header extends Component {
         return (
             <div className={ styles.header }>
                 <Logo />
-                {this.props.isMobile ? <PopUpMenuButton viewMenu={this.props.viewMenu} isClick={ this.props.isClick } /> : <NavBar route={ this.props.route } />}
+                { this.props.isMobile ? <PopUpMenuButton viewMenu={ this.props.viewMenu } isClick={ this.props.isClick } /> : <NavBar viewMenu={ this.props.viewMenu } route={ this.props.route } />}
             </div>
         );
     }

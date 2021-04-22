@@ -5,7 +5,11 @@ import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 function Hyperlink(props) {
     return (
         <Router>
-            <Link to={props.route.link} className={ styles.hyperlink }>{props.route.name}</Link>
+            <Link to={ props.route.link } className={ styles.hyperlink } onClick={ () => {
+                props.viewMenu(false);
+            }
+            }>
+                { props.route.name }</Link>
         </Router>
     );
 }
