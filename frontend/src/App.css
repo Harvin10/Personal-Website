@@ -1,12 +1,11 @@
 .App {
   /* display */ 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   /* width/height */ 
   width: 100vw;
   height: 100vh;
   /* padding/margin */ 
+  margin-top: 10vh;
   /* border */ 
   
   /* text */ 
@@ -16,47 +15,35 @@
   /* transition/animation */ 
   
   /* others */ 
+  box-sizing: border-box;
 }
 
-.Input {
-  /* display */ 
-  display: flex;
-  justify-content: center;
-  /* width/height */ 
+.menu {
+  /*display*//*width/height*/
   
-  /* padding/margin */ 
-
-  /* border */ 
+  /*padding/margin*/
   
-  /* text */ 
-  
-  /* shadow */ 
-  
-  /* transition/animation */ 
-  
-  /* others */ 
-}
-
-.Button {
-  /* display */ 
-  display: flex;
-  justify-content: center;
-  /* width/height */ 
-  
-  /* padding/margin */ 
-  
-  /* border */ 
-  
-  /* text */ 
-  
-  /* shadow */ 
-  
-  /* transition/animation */ 
-  
-  /* others */ 
+  /*border*//*text*//*shadow*//*transition/animation*/
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  /*others*/
+  left: 0;
 }
 
 .hidden {
-  display: none;
+  /*display*//*width/height*//*padding/margin*//*border*//*text*//*shadow*/
+  
+  /*transition/animation*/
+  transform: translateX(-500px);
+  -webkit-transform: translateX(-500px);
+  -moz-transform: translateX(-500px);
+  -ms-transform: translateX(-500px);
+  -o-transform: translateX(-500px);
+  /*others*/
 }
+
+
 

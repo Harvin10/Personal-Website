@@ -18,3 +18,28 @@
     
     /* others */ 
 }
+
+@media screen and (max-width: 768px) {
+    .nav_bar {
+        /*display*/
+        background-color: #F7444E;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        /*width/height*/
+        width: 50%;
+        height: 100vh;
+        /*padding/margin*/
+
+        /*border*/
+
+        /*text*/
+
+        /*shadow*/
+        
+        /*transition/animation*/
+        
+        /*others*/
+    }    
+}

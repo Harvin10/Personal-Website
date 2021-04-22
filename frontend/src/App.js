@@ -30,10 +30,10 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isClick: false,
-      isMobile: false,
       windowWidth: window.innerWidth,
-      windowHeight: window.innerHeight
+      windowHeight: window.innerHeight,
+      isClick: false,
+      isMobile: (window.innerWidth < 768) ? true : false 
     }
   }
 
@@ -42,10 +42,13 @@ class App extends Component {
       windowWidth: window.innerWidth, 
       windowHeight: window.innerHeight
     });
-    if(this.state.windowWidth < 600) {
+    if(this.state.windowWidth < 768) {
       this.setState({isMobile:true});
     } else {
-      this.setState({isMobile:false});
+      this.setState({
+        isClick: false,
+        isMobile: false
+      });
     }
   }
 

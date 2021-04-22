@@ -34,3 +34,26 @@
     
     /* others */ 
 }
+
+@media screen and (max-width: 768px) {
+    .hyperlink {
+        /* display */ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* width/height */ 
+        width: 100%;
+        height: 100%;
+        /* padding/margin */ 
+        
+        /* border */ 
+        
+        /* text */ 
+        text-decoration: none;
+        /* shadow */ 
+        
+        /* transition/animation */ 
+        
+        /* others */ 
+    }
+}
